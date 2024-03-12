@@ -1,0 +1,40 @@
+.swiper-container {
+    width: 1000px !important;
+}
+
+.swiper-slide {
+    text-align: center !important;
+    opacity: 0.5 !important;
+}
+
+.swiper-slide img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+.image-container {
+    position: relative; /* Added position relative for stacking */
+    border: 2px solid #000000; /* Set border width and color */
+    border-radius: 10px; /* Set border radius for rounded corners */
+    box-shadow: 0 2px 5px rgba(249, 249, 249, 0.3); /* Add a box shadow for 3D effect */
+    overflow: hidden; /* Ensure the image doesn't overflow */
+    width: 250px; /* Set the width of the container */
+    height: 120px;
+    background-color: white;
+}
+
+.image-container img {
+    display: block; /* Make sure the image is a block element */
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Make the image fill the container */
+    object-fit: cover;
+    background-color: white;
+    filter: grayscale(100%); /* Initially set image to black and white */
+    transition: filter 0.3s ease; /* Add transition effect */
+}
+
+.image-container:hover img {
+    filter: grayscale(0%); /* Set image to true colors on hover */
+}
+
+
