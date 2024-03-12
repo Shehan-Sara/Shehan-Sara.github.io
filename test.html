@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        .swiper-container {
+            width: 100%;
+            padding: 20px 0; /* Adjust padding as needed */
+        }
+        .swiper-slide {
+            text-align: center;
+            opacity: 0.5;
+        }
+        .swiper-slide img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="#">
+                    <img src="http://placehold.it/225x175" alt="Slide 1">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">
+                    <img src="http://placehold.it/225x175" alt="Slide 2">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">
+                    <img src="http://placehold.it/225x175" alt="Slide 3">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">
+                    <img src="http://placehold.it/225x175" alt="Slide 4">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">
+                    <img src="http://placehold.it/225x175" alt="Slide 5">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var swiper = new Swiper('.swiper-container', {
+                direction: 'horizontal',
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                },
+                slidesPerView: 3,
+                spaceBetween: 30, // Adjust space between slides as needed
+                grabCursor: true,
+                autoplayDisableOnInteraction: false,
+                speed: 2000,
+            });
+        });
+    </script>
+</body>
+</html>
